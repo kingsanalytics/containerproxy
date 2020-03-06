@@ -2,7 +2,7 @@
 
     ContainerProxy
 
-    Copyright (C) 2016-2019 Open Analytics
+    Copyright (C) 2016-2018 Open Analytics
 
     ===========================================================================
 
@@ -35,17 +35,24 @@
 </head>
 
 <body>
-	<div id="error">
-		<h1>Error</h1>
-		<p>
-			<b>Status code:</b> <span th:text="${status}"></span>
-		</p>
-		<p>
-			<b>Message:</b> <span th:text="${message}"></span>
-		</p>
-		<p>
-			<b>Stack Trace:</b> <br/><span th:utext="${stackTrace}"></span>
-		</p>
-	</div>
+  <div class="outer-div">
+    <div class="mid-div">
+      <div class="center-div" id="error">
+        <p>
+          <span th:text="${message}"></span>
+        </p>
+        <p>
+          <span>A <span th:text="${status}"></span> error occurred.</span>
+        </p>
+        <p>
+          <span>If this persists please contact the Kings analytics team.</span>
+        </p>
+        <p>
+          <a th:href="@{/logout}"><span>Log out.</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

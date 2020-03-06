@@ -1,7 +1,7 @@
 /**
  * ContainerProxy
  *
- * Copyright (C) 2016-2019 Open Analytics
+ * Copyright (C) 2016-2018 Open Analytics
  *
  * ===========================================================================
  *
@@ -18,6 +18,40 @@
  * You should have received a copy of the Apache License
  * along with this program.  If not, see <http://www.apache.org/licenses/>
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
 #error {
-	padding-left: 15px;
+	font-family:'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#error a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #363636;
+  color: #ffffff;
+}
+
+.outer-div
+{
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mid-div
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.center-div
+{
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
 }
