@@ -18,7 +18,7 @@
  * You should have received a copy of the Apache License
  * along with this program.  If not, see <http://www.apache.org/licenses/>
  */
-package eu.openanalytics.containerproxy.auth.impl.kerberos;
+/*package eu.openanalytics.containerproxy.auth.impl.kerberos;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -73,3 +73,4 @@ public class KRBClientCacheRegistry {
 		Files.deleteIfExists(p.getParent());
 	}
 }
+*/
